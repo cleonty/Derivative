@@ -27,7 +27,7 @@ public class Mul implements Derivable {
         return this.b;
       }
       if (ca.isZero()) {
-        return new Constant(0);
+        return ca;
       }
     }
 
@@ -37,7 +37,7 @@ public class Mul implements Derivable {
         return this.a;
       }
       if (cb.isZero()) {
-        return new Constant(0);
+        return cb;
       }
     }
 
