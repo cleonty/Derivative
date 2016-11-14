@@ -22,8 +22,14 @@ public class Variable implements Derivable {
   }
 
   @Override
+  public Derivable simplify() {
+    return this;
+  }
+  
+  @Override
   public String toString() {
     return this.name;
   }
+
 
 }
