@@ -14,21 +14,8 @@ public class Constant implements Derivable {
   }
 
   @Override
-  public Derivable simplify() {
-    return this;
-  }
-
-  @Override
   public String toString() {
     return Integer.toString(this.c);
-  }
-
-  boolean isZero() {
-    return this.c == 0;
-  }
-
-  boolean isOne() {
-    return this.c == 1;
   }
 
 }
